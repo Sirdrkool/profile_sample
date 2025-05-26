@@ -1,0 +1,345 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    text-decoration: none;
+    list-style: none;
+}
+button{
+    outline: none;
+    border: none;
+}
+.contain{
+    max-width: 80%;
+    margin: auto;
+}
+.header{
+    width: 100%;
+    z-index: 22;
+    transition: all .3s ease-in-out;
+    border-bottom: 1px solid #2e2d2d;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li a{
+    color: #b1b1b1;
+    font-size: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    padding: 0 13px;
+}
+a.active, a:hover{
+    transition: .5s;
+    color: #F3A407;
+}
+
+.btn .head-btn{
+    background-color: #F3A407;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: .5s ease-in-out;
+}
+.head-btn:hover{
+    background-color: bisque;
+    border: 5px solid #F3A407;
+    padding: 15px 25px;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+    color: #ffffff;
+}
+.hero-info .hero-p{
+    color: rgb(233, 233, 233);
+    margin-bottom: -15px;
+}
+hr{
+    position: absolute;
+    top: 200px;
+    background-color: #F3A407;
+    left: 0px;
+    color: #F3A407;
+    outline: none;
+    border: none;
+    width: 8%;
+    height: 1px;
+}
+.hero-title{
+    font-family: Baskerville Old Face;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 55px;
+    padding: 20px 0;
+}
+.btn-text{
+    display: flex;
+    justify-content: justify;
+    align-items: center;
+    margin-top: 50px;
+}
+.hero-btn{
+    border: 1px solid #F3A407;
+    padding: 15px 17px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #ffffff;
+    margin-right: 20px
+}
+.hero-img{
+    width: 400px;
+}
+.about{
+    padding: 100px 0;
+    background: rgba(255, 255, 255, 0.021);
+}
+.about-body{
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+}
+.hero-p{
+    color: #F3A407
+}
+.about-title, .experience-title{
+    min-width: 50%;
+}
+.about-btn{
+    margin: 100px 0 40px 0;
+    padding: 15px 45px;
+    border: 1px solid #ffffff;
+    background: transparent;
+    outline: none;
+    color: #ffffff;
+    transition: all .5s ease-in-out;
+    border-radius: 5px;
+}
+.about-btn:hover{
+    border: 1px solid #F3A407;
+    background-color: #F3A407;
+    color: #000000;
+}
+.social{
+    margin: auto;
+}
+.social a.icons{
+    margin: 0 5px;
+    color: #ffffff;
+}
+.social a.icons:hover{
+    color: #F3A407;
+}
+.about-p{
+    margin-top: 55px;
+}
+.about-p p{
+    margin-bottom: 20px;
+    font-family: Baskerville Old Face;
+}
+.experience{
+    background-color: #ffffff;
+    padding: 100px 0;
+}
+.experience-body{
+    display: flex;
+    justify-content: space-between;
+}
+.experience-p{
+    margin-top: 55px;
+}
+.experience-btn{
+    margin: 50px 0 40px 0;
+    padding: 10px 50px;
+    border: 2px solid #000000;
+    background: transparent;
+    outline: none;
+    color: #000000;
+    transition: all .5s ease-in-out;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.experience-btn:hover{
+    border: 2px solid #000000;
+    background-color: #000000;
+    color: #ffffff;
+}
+.title{
+    display: flex;
+}
+.title span{
+    color: #F3A407;
+    padding-right: 10px;
+    font-weight: bold;
+}
+.experience .para{
+    margin: 15px 0 50px 0;
+}
+.education{
+    padding: 100px 0;
+    background-color: #f1e9d9;
+}
+.education-title, .eduction-details, .edu, .vol{
+    width: 50%;
+}
+.education-body{
+    display: flex;
+    gap: 20px;
+}
+.dot{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    background-color: #F3A407;
+    border-radius: 50px;
+    left: -24px;
+}
+.box{
+    padding: 0 15px 40px 15px;
+    margin: 40px 0;
+    border-left: 2px solid #F3A407;
+}
+.edu .box b, .vol .box b{
+    font-size: 15px;
+}
+.box i{
+    font-size: 17px;
+}
+.date{
+    margin: 50px 0 0px 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+.appointment{
+    padding: 100px 0;
+    color: #ffffff;
+}
+.appointment-body{
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+.appointment-btn{
+    margin: 50px 0 40px 0;
+    padding: 10px 50px;
+    border: 2px solid #F3A407;
+    background: #F3A407;
+    outline: none;
+    color: #000000;
+    transition: all .5s ease-in-out;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.article{
+    padding: 100px 0;
+    background-color: #181818;
+    color: #ffffff;
+    border-bottom: 1px solid #2b2b2b;
+}
+.article-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.article-body{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.article-p{
+    width: 50%;
+}
+.article-p .hero-p{
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.article-p .bp{
+    margin-top: 20px;
+    color: #b1b1b1;
+}
+.article-p .bp a{
+    color: #F3A407;
+    text-decoration: none;
+}
+.footer{
+    padding: 100px 0 0 0;
+    background-color: #181818;
+    color: #ffffff;
+}
+.footer-p{
+    width: 50%;
+}
+.footer-p .bp{
+    color: #b1b1b1;
+}
+.foot-p{
+    width: 40%;
+}
+.footer-body, .foot-p{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.sub-title{
+    margin-bottom: 20px;
+}
+.links li a, .contacts li{
+    color: #b1b1b1;
+    line-height: 30px;
+}
+.copy{
+    width: 80%;
+    padding: 50px 0;
+    color: #b1b1b1;
+}
+.copy a{
+    color: #b1b1b1;
+}
+.black{
+    background-color: #000000;
+    padding: 10px;
+}
+.back-to-top{
+    position: fixed;
+    bottom: 70px;
+    right: 40px;
+    border: 1px solid #ffffff;
+    width: 45px;
+    color: #fff;
+    height: 45px;
+    font-size: 12px;
+    display: none;
+    place-items: center;
+    border-radius: 50px;
+    transition: all .3s ease-in-out;
+    box-shadow: 1px 1px 12px #444;
+    z-index: 888;
+}
+.back-to-top.scrolled{
+    display: grid;
+    transition: all .3s ease-in-out;
+}
+.back-to-top:hover{
+    font-size: 20px;
+    color: #F3A407;
+    border: 1px solid #F3A407;
+    cursor: pointer;
+}
+@media (max-width: 952px){
+   
+}
+@media (max-width: 858px) {
+    
+}
